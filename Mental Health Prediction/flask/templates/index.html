@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body background="gray1.jpg" style="background-repeat:no-repeat;background-size:100%">
+<h1>Prediction Page</h1>
+<form method="POST" action="/out">
+    1.What is your age : <input type="number" name="Age" ><br><br>
+    <lable>2.What is your gender?</lable><br>
+    <select name="Gender">
+        <option value=1>male</option>
+        <option value=0>female</option>
+    </select><br><br><br>
+    <lable>self employed</lable><br>
+    <select name="self_employed">
+        <option value=1>Yes</option>
+        <option value=0>No</option>
+    </select><br><br><br>
+    <lable>family history</lable><br>
+    <select name="family_history">
+        <option value=1>Yes</option>
+        <option value=0>No</option>
+    </select><br><br><br>
+    <lable>work_interfere</lable><br>
+    <select name="work_interfere">
+        <option value=1>Often</option>
+        <option value=2>Rarely</option>
+        <option value=0>Never</option>
+    </select><br><br><br>
+    No:of employees : <input type="number" name="no_employees" ><br><br>
+    <lable>remote_work</lable><br>
+    <select name="remote_work">
+        <option value=1>Yes</option>
+        <option value=0>No</option>
+    </select><br><br><br>
+    <lable>tech_company</lable><br>
+    <select name="tech_company">
+        <option value=1>Yes</option>
+        <option value=0>No</option>
+    </select><br><br><br>
+    <lable>benefits</lable><br>
+    <select name="benefits">
+        <option value=2>Yes</option>
+        <option value=1>No</option>
+        <option value=0>Don't know</option>
+    </select><br><br><br>
+    <lable>care_options</lable><br>
+    <select name="care_options">
+        <option value=2>Yes</option>
+        <option value=0>No</option>
+        <option value=1>Not sure</option>
+    </select><br><br><br>
+    <lable>wellness_program</lable><br>
+    <select name="wellness_program">
+        <option value=2>Yes</option>
+        <option value=1>No</option>
+        <option value=0>Don't know</option>
+    </select><br><br><br>
+    <lable>seek help</lable><br>
+    <select name="seek_help">
+        <option value=2>Yes</option>
+        <option value=1>No</option>
+        <option value=0>Don't know</option>
+    </select><br><br><br>
+    <lable>anonymity</lable><br>
+    <select name="anonymity">
+        <option value=2>Yes</option>
+        <option value=1>No</option>
+        <option value=0>Don't know</option>
+    </select><br><br><br>
+    <lable>leave</lable><br>
+    <select name="leave">
+        <option value=2>Somewhat easy</option>
+        <option value=0>Don't know</option>
+        <option value=1>Somewhat difficult</option>
+    </select><br><br><br>
+    <lable>mental health consequence</lable><br>
+    <select name="mental_health_consequence">
+        <option value=2>Yes</option>
+        <option value=1>No</option>
+        <option value=0>Maybe</option>
+    </select><br><br><br>
+    <lable>Do you think that discussing a physical health issue with your employer would have negative consequence?</lable><br>
+    <select name="phys_health_consequence">
+        <option value=1> Yes</option>
+        <option value=0>No</option>
+    </select><br><br><br>
+    <lable>Would you be willing to discuss a mental health issue with your coworkers?</lable><br>
+     <select name="coworkers">
+        <option value=2>Yes</option>
+        <option value=0>No</option>
+        <option value=1>Some of them</option>
+    </select><br><br><br>
+    <lable>Would you be willing to discuss a mental health issue with your direct supervisor(s)?</lable><br>
+     <select name="supervisor">
+        <option value=1>Yes</option>
+        <option value=0>No</option>
+    </select><br><br><br>
+    <label>Would you bring up a mental health issue with a potential employer in an interview?</label><br>
+     <select name="mental_health_interview">
+         <option value=0>Maybe</option>
+        <option value=2>Yes</option>
+        <option value=1>No</option>
+    </select><br><br><br>
+    <label>Would you bring up a physical health issue with a potential employer in an interview?</label><br>
+     <select name="phys_health_interview">
+         <option value=0>Maybe</option>
+        <option value=2>Yes</option>
+        <option value=1>No</option>
+    </select><br><br><br>
+    <label>Do you feel that your employer takes mental health as seriously as physical health?</label><br>
+     <select name="mental_vs_physical">
+         <option value=0>Don't know</option>
+        <option value=2>Yes</option>
+        <option value=1>No</option>
+    </select><br><br><br>
+    <lable>obs consequence</lable><br>
+    <select name="obs_consequence">
+        <option value=1>Yes</option>
+        <option value=0>No</option>
+    </select><br><br><br>
+    <button type="submit" class="btn btn-primary btn-block btn-large"  style="height:30px;width:80px">Predict</button>
+
+</form>
+</body>
+</html>
